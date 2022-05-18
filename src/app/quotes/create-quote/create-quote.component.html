@@ -1,0 +1,35 @@
+
+<form [formGroup]="genForm" class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>DueDate</mat-label>
+        <input matInput placeholder="DueDate" type="date" formControlName="DueDate">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Quote_ID</mat-label>
+        <input matInput placeholder="Quote_ID" type="number" formControlName="Quote_ID">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Contact_Name</mat-label>
+        <input matInput placeholder="Contact_Name" formControlName="Contact_Name">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Quote_Type</mat-label>
+        <textarea matInput placeholder="Quote_Type" formControlName="Quote_Type"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Task_Type</mat-label>
+        <input matInput placeholder="Task_Type" formControlName="Task_Type">
+    </mat-form-field>
+
+    <div class="example-button-row">
+        <button mat-flat-button (click)="fillData()">Fill Data</button>
+      </div>
+
+    <div class="example-button-row">
+        <button mat-flat-button (click)="submit()">Submit</button>
+      </div>
+</form>
