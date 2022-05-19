@@ -17,27 +17,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { LayoutModule } from './layout/layout.module';
 import { QuotesModule } from './quotes/quotes.module';
-import { ListQuotesComponent } from './quotes/list-quotes/list-quotes.component';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MatNativeDateModule } from '@angular/material/core';
-import { LoginComponent } from './auth/components/login/login.component';
-import { RegisterComponent } from './auth/components/register/register.component';
-import { LoginUserComponent } from './users/login-user/login-user.component';
-import { RegisterUserComponent } from './users/register-user/register-user.component';
 import { ViewQuoteComponent } from './quotes/view-quote/view-quote.component';
+import { UsersModule } from './users/users.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListQuotesComponent,
     ViewQuoteComponent,
-    LoginComponent,
-    RegisterComponent,
-    LoginUserComponent,
-    RegisterUserComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -45,6 +35,7 @@ import { ViewQuoteComponent } from './quotes/view-quote/view-quote.component';
     BrowserAnimationsModule,
     LayoutModule,
     QuotesModule,
+    UsersModule,
     MatSidenavModule,
     MatListModule,
     MatTableModule,
@@ -57,8 +48,8 @@ import { ViewQuoteComponent } from './quotes/view-quote/view-quote.component';
     MatTableModule, 
     MatNativeDateModule,
     MatFormFieldModule,
-    MatInputModule,
-    MatDatepickerModule
+    // MatInputModule,
+    // MatDatepickerModule,
   ],
   providers: [
     MatDatepickerModule,

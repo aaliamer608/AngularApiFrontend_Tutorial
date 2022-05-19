@@ -12,19 +12,18 @@ export class LoginUserComponent implements OnInit {
   dataSource: any;
   
   
+  
   constructor(private userService: UserService) { }
   
   ngOnInit(): void {
-    this.userService.getUsersByID(102).subscribe((data: any) => {
+    this.userService.getUsers().subscribe((data: any) => {
       this.userData = data;
       this.dataSource = this.userData;
-
-
 
       console.log(this.userData);
     });
   }
   
-  displayedColumns: string[] = ['UserID', 'UserName', 'UserPassword', 'UserRoles'];
+  displayedColumns: string[] = ['UserID', 'UserName', 'UserPassword', 'UserRoles', 'UserEmailID'];
 }
 
