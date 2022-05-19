@@ -1,1 +1,29 @@
-<p>register-user works!</p>
+<form [formGroup]="genForm" class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>UserID</mat-label>
+        <input matInput placeholder="UserID" type="number" formControlName="UserID">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>UserName</mat-label>
+        <input matInput placeholder="UserName" formControlName="UserName">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>UserPassword</mat-label>
+        <input matInput placeholder="UserPassword" type="password" formControlName="UserPassword">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>UserEmailID</mat-label>
+        <input matInput placeholder="UserEmailID" formControlName="UserEmailID">
+    </mat-form-field>
+
+    <div class="example-button-row">
+        <button mat-flat-button (click)="fillData()">Fill Data</button>
+    </div>
+
+    <div class="example-button-row">
+        <button mat-flat-button (click)="submit()">Submit</button>
+    </div>
+</form>
