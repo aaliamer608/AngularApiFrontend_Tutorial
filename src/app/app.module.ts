@@ -48,8 +48,8 @@ import { UsersModule } from './users/users.module';
     MatTableModule, 
     MatNativeDateModule,
     MatFormFieldModule,
-    // MatInputModule,
-    // MatDatepickerModule,
+    MatInputModule,
+    MatDatepickerModule,
   ],
   providers: [
     MatDatepickerModule,
